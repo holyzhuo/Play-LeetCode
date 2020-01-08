@@ -10,7 +10,7 @@ class Solution
      * @param Integer   $target
      * @return Integer[]
      *
-     *  Brute Force.
+     *  暴力枚举
      *  Time Complexity: O(n^2)
      *  Space Complexity: O(1)
      */
