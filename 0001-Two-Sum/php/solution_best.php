@@ -19,9 +19,11 @@ class Solution
         $map = [];
         foreach ($nums as $k => $num) {
             $diff = $target - $num;
-            // key不能等于自身
             if (isset($map[$diff])) {
-                return [$map[$diff], $k];
+                return [
+                    $map[$diff],
+                    $k,
+                ];
             }
             $map[$num] = $k;
         }

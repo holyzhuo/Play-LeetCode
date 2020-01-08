@@ -16,16 +16,12 @@ class Solution
      */
     function twoSum($nums, $target)
     {
-        $ret = [];
         for ($i = 0; $i < count($nums); $i++) {
             for ($j = $i + 1; $j < count($nums); $j++) {
                 if ($nums[$i] + $nums[$j] == $target) {
-                    $ret[] = $i;
-                    $ret[] = $j;
-                    return $ret;
+                    return [$i, $j];
                 }
             }
         }
-        return $ret;
     }
 }
