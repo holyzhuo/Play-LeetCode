@@ -33,7 +33,7 @@ class Solution
             $position--;
         }
 
-        while ($f < 0 && $s >= 0) {
+        while ($s >= 0) {
             $nums1[$position] = $nums2[$s];
             $s--;
             $position--;
