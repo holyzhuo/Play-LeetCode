@@ -12,7 +12,7 @@ class Solution
      * @return NULL
      *
      * 出栈O(1)，然后头插入O(n)
-     * 时间复杂度：O(n2)
+     * 时间复杂度：O(n * k)
      * 空间复杂度: O(1)
      */
     function rotate(&$nums, $k)
