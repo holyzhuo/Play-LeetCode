@@ -18,8 +18,7 @@ class Solution
     function rotate(&$nums, $k)
     {
         for ($i = 0; $i < $k; $i++) {
-            $last = array_pop($nums);
-            array_unshift($nums, $last);
+            array_unshift($nums, array_pop($nums));
         }
     }
 }
