@@ -24,6 +24,6 @@ class Solution
             if($max != $nums[$i]) $right = $i;
             if($min != $nums[$len-$i-1]) $left = $len-$i-1;
         }
-        return $right - $left == 0 ? 0 : $right - $left + 1;
+        return isset($right) ? $right - $left + 1 : 0 ;
     }
 }
