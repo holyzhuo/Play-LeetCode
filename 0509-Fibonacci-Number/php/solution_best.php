@@ -11,14 +11,12 @@ class Solution
      * @param Integer $N
      * @return Integer
      *
-     * 递归
-     * 时间复杂度: O(2n次方)
-     * 空间复杂度: O(n)
+     * 时间复杂度: O(1)
+     * 空间复杂度: O(1)
      */
     function fib($N)
     {
-        if ($N == 0) return 0;
-        if ($N == 1) return 1;
-        return $this->fib($N - 1) + $this->fib($N - 2);
+        $goldenRatio = (1 + sqrt(5)) / 2;
+        return (int)round(pow($goldenRatio, $N) / sqrt(5));
     }
 }
